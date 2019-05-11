@@ -40,4 +40,5 @@ pushd ~/.vim/bundle
 git clone https://github.com/itchyny/lightline.vim lightline.vim
 git clone https://tpope.io/vim/surround.git surround
 git clone https://github.com/scrooloose/nerdtree.git nerdtree
+git clone https://github.com/tpope/vim-fugitive.git vim-fugitive
 popd
