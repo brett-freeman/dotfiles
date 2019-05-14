@@ -25,8 +25,12 @@ ln -s $CWD/.bashrc ~/.bashrc
 ln -s $CWD/.tmux.conf ~/.tmux.conf
 
 # Install dependencies
+if ! [ -x "$(command -v pip3)" ]; then
+  sudo apt install python3-pip
+fi
+
 echo "Installing powerline..."
-sudo pip install powerline-status
+sudo pip3 --user install powerline-status
 
 # Install pathogen package manager
 echo "Installing pathogen..."
