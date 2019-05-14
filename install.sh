@@ -30,7 +30,7 @@ if ! [ -x "$(command -v pip3)" ]; then
 fi
 
 echo "Installing powerline..."
-sudo pip3 --user install powerline-status
+pip3 install --user powerline-status
 
 # Install pathogen package manager
 echo "Installing pathogen..."
