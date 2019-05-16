@@ -26,7 +26,10 @@ ln -s $CWD/.tmux.conf ~/.tmux.conf
 
 # Install dependencies
 if ! [ -x "$(command -v pip3)" ]; then
-  sudo apt install python3-pip
+  sudo apt update
+  sudo apt install -y python3.7
+  sudo upgrade-alternatives --install /usr/bin/python python3 /usr/bin/python3.7
+  sudo apt install -y python3-pip
 fi
 
 echo "Installing powerline..."
@@ -45,7 +48,7 @@ git clone https://github.com/itchyny/lightline.vim lightline.vim
 git clone https://tpope.io/vim/surround.git surround
 git clone https://github.com/scrooloose/nerdtree.git nerdtree
 git clone https://github.com/tpope/vim-fugitive.git vim-fugitive
-git clone git clone https://github.com/mattn/emmet-vim.git emmet-vim
+git clone https://github.com/mattn/emmet-vim.git emmet-vim
 git clone https://github.com/junegunn/fzf.vim.git fzf.vim
 git clone https://github.com/Townk/vim-autoclose.git vim-autoclose
 popd
@@ -53,4 +56,4 @@ popd
 echo "Installing fzf and rip grep"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-sudo apt install ripgrep
+sudo snap --classic install ripgrep
