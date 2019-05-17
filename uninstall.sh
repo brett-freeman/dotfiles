@@ -18,3 +18,4 @@ fi
 
 rm -rf ~/.vim/bundle/*
 rm -rf ~/.vim/autoload/*
+rm -rf ~/.fzf
