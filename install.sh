@@ -28,7 +28,7 @@ ln -s $CWD/.tmux.conf ~/.tmux.conf
 if ! [ -x "$(command -v pip3)" ]; then
   sudo apt update
   sudo apt install -y python3.7
-  sudo upgrade-alternatives --install /usr/bin/python python3 /usr/bin/python3.7
+  sudo update-alternatives --install /usr/bin/python python3 /usr/bin/python3.7 1
   sudo apt install -y python3-pip
 fi
 

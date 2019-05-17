@@ -66,7 +66,7 @@ set t_vb= " Turn off error flash
 set encoding=utf-8
 
 " Whitespace
-set wrap
+set nowrap
 set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab noshiftround
