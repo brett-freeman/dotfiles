@@ -15,3 +15,6 @@ fi
 if [ -f ~/.tmux.conf.bak ]; then
   mv ~/.tmux.conf.bak ~/.tmux.conf
 fi
+
+rm -rf ~/.vim/bundle/*
+rm -rf ~/.vim/autoload/*
