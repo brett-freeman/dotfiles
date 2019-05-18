@@ -24,16 +24,8 @@ ln -s $CWD/.vimrc ~/.vimrc
 ln -s $CWD/.bashrc ~/.bashrc
 ln -s $CWD/.tmux.conf ~/.tmux.conf
 
-# Install dependencies
-if ! [ -x "$(command -v pip3)" ]; then
-  sudo apt update
-  sudo apt install -y python3.7
-  sudo update-alternatives --install /usr/bin/python python3 /usr/bin/python3.7 1
-  sudo apt install -y python3-pip
-fi
-
 echo "Installing powerline..."
-pip3 install --user powerline-status
+pip install --user powerline-status
 
 # Install pathogen package manager
 echo "Installing pathogen..."
@@ -56,4 +48,4 @@ popd
 echo "Installing fzf and rip grep"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
-sudo snap --classic install ripgrep
+sudo snap install --classic ripgrep
