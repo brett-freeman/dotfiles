@@ -83,6 +83,9 @@ set hidden
 " Rendering
 set ttyfast
 
+" Mouse-mode for NERDTree mostly
+set mouse=a
+
 " Last line
 set showmode
 set showcmd
