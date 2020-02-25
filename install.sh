@@ -24,9 +24,6 @@ ln -s $CWD/.vimrc ~/.vimrc
 ln -s $CWD/.bashrc ~/.bashrc
 ln -s $CWD/.tmux.conf ~/.tmux.conf
 
-echo "Installing powerline..."
-pip install --user powerline-status
-
 # Install pathogen package manager
 echo "Installing pathogen..."
 pushd ~/.vim/autoload
