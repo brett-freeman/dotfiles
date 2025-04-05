@@ -1,2 +1,1 @@
-## Some dotfiles ##
-Here they are
+Starting over with Stow using Hyprland.
