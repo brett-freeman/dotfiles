@@ -24,7 +24,7 @@
       "on-click": "pavucontrol"
   },
   "custom/power": {
-      "format": " 󰗽  ",
+      "format": "<span size='13000' foreground='#cba6f7'> 󰗽 </span> ",
       "tooltip": "false",
       "on-click": "hyprctl dispatch exit"
   }
