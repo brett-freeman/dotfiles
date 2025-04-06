@@ -12,3 +12,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias vim="nvim"
 
 nerdfetch
+
+eval "$(zoxide init zsh)"
